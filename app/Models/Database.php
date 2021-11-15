@@ -58,7 +58,7 @@ abstract class connect{
         try { 
 
             $this -> checkTable(); 
-            $this->connect = new PDO('mysql:host=localhost;dbname=duan;charset=UTF8', 'root', '', [
+            $this->connect = new PDO('mysql:host=localhost;dbname=localname;charset=UTF8', 'root', '', [
                 PDO::ATTR_EMULATE_PREPARES => false,
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]);
